@@ -24,7 +24,11 @@ export default function BuildControls(props) {
           //disabled={props.disabled[ctrl.type]}
         />
       ))}
-      <button disabled={!props.purchaseable} className="OrderButton">
+      <button
+        onClick={props.ordered}
+        disabled={!props.purchaseable}
+        className="OrderButton"
+      >
         ORDER NOW
       </button>
     </div>
