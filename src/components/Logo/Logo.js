@@ -5,7 +5,7 @@ import "./Logo.css";
 export default function Logo(props) {
   return (
     <div className="Logo">
-      <img src={Logopng} alt="photo-logo" style={{ height: props.height }} />
+      <img src={Logopng} alt="photo-logo" />
     </div>
   );
 }
